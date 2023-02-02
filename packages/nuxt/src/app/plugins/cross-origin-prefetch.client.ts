@@ -12,8 +12,7 @@ export default defineNuxtPlugin((nuxtApp) => {
         prefetch: [
           {
             source: 'list',
-            urls: [...externalURLs.value],
-            requires: ['anonymous-client-ip-when-cross-origin']
+            urls: [...externalURLs.value]
           }
         ]
       })
